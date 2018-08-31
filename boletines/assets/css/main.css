@@ -1,0 +1,141 @@
+html{
+  font-family: 'Ranga', cursive;
+}
+a{
+  text-decoration: none;
+  color: #BA68C8
+}
+img {
+  max-width: 100%;
+}
+a:hover{
+  opacity: 0.8;
+}
+a:focus{
+  background: red;
+}
+.title{
+  text-transform: uppercase;
+  text-align: center;
+}
+.container{
+  background: #12c2e9;
+  background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content{
+  max-width: 960px;
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  /*box-shadow: diferenciaHorizontal diferenciaVertical desenfoque amplitud color;*/
+  box-shadow: 0 3px 6px #80deea, 0 3px 6px #9fa8da;
+  border-radius: 4px;
+  position: relative;
+  overflow: scroll;
+}
+
+.content{
+  padding: 1em;
+}
+td{
+  display: block;
+  width: 100%;
+}
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #BA68C8;
+}
+th{
+  display: none;
+}
+
+.actions{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.close{
+  height:
+}
+.paragraph{
+  line-height: 1.8em;
+  font-weight: 300;
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #8e44ad;
+  display: inline-block;
+  box-shadow: 0 3px 6px #80deea, 0 3px 6px #9fa8da;
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-star{
+  color: #FFFF00;
+}
+.table{
+  width: 100%;
+  border-spacing: 0;
+}
+.table td, .table th{
+  padding: 1em;
+  text-align: left;
+}
+.table tr:nth-child(even){ background-color: #E2B6CF;}
+.title-item{
+  /*border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #F06292;*/
+  font-size: 2em;
+  border-bottom: solid 2px #F06292;
+  padding-bottom: 1em;
+}
+.address{
+  font-weight: bold;
+  color: #8e44ad;
+  font-size: 1.2em;
+  margin-top: 2em;
+  display: inline-block;
+}
+.main-image{
+  float: left;
+  margin-right: 1em;
+  height: 250px;
+}
+.position{
+  background-color: #F06292;
+  color: white;
+  padding: 0.5em;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+@media (min-width: 900px) {
+  th {
+    display: table-cell;
+  }
+  td {
+    width: auto;
+    display: table-cell;
+  }
+  td:nth-of-type(1){
+    font-size: 1em;
+  }
+    .content{
+      padding: 1.8em;
+    }
+}
+
+@media (min-height: 550px){
+  .content{
+    height: 500px;
+  }
+}
